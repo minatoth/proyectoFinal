@@ -1,0 +1,9 @@
+<h3 style="color: #546;">Bienvenido a <%=title%></h3>
+<h3>La pagina donde puede registrar contactos..</h3>
+<center>
+<table style="border: 3px #044 solid">
+<% var i; for(i=0; i< contactos.length; i++) { %>
+   <tr style="border: 3px #044 solid"><td style="border: 3px #044 solid"><%= i %></td><td style="border: 3px #044 solid"><%= contactos[i].nombres %></td><td style="border: 3px #044 solid"><%= contactos[i].apellidoPaterno %></td><td style="border: 3px #044 solid"><%= contactos[i].apellidoMaterno %></td><td style="border: 3px #044 solid"><%= contactos[i].telefonoPersonal %></td><td style="border: 3px #044 solid"><%= contactos[i].telefonoDomicilio %></td></tr>   
+<% } %>
+</table>
+</center>
